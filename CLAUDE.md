@@ -8,53 +8,65 @@ This is a local mirror of the Arizona Bankruptcy Law Firm website (www.arizonabk
 
 ## Development Commands
 
-### Running the Local Server
+### Viewing the Site
+To view the website, open any of the HTML files in the `www.arizonabk.com/` directory in a web browser:
 ```bash
-node server.js
+open www.arizonabk.com/index.html
 ```
-The server runs on http://localhost:8080
 
-### Direct Browser Access
-Simply open `index.html` in any web browser for quick viewing without a server.
+For better local development experience with proper MIME types, you can use Python's built-in server:
+```bash
+cd www.arizonabk.com
+python3 -m http.server 8080
+```
+Then visit http://localhost:8080
 
 ## Architecture
 
 ### Project Structure
-- **Main Entry Point**: `index.html` - The homepage of the website
-- **Assets Directory**: `assets/` - Contains all static resources
-  - `css/` - Compiled stylesheets
+- **Website Content**: `www.arizonabk.com/` - Contains the complete website structure
+  - Main pages in subdirectories with `index.html` files
+  - Each section (bankruptcy, blog, estate-planning, etc.) is self-contained
+- **Assets Directory**: `assets/` - Contains global static resources
+  - `css/` - Minified stylesheets (main bundle and supplementary CSS)
   - `js/` - JavaScript bundles
-  - `images/` - Image assets
-  - `fonts/` - Web fonts
-- **Offline Copies**: Two directories containing offline website copies
-  - `arizonabk-offline/` - Simple offline version
-  - `arizonabk-offline-node/` - Node.js served offline version with full page structure
-- **Utilities**:
-  - `server.js` - Simple Node.js HTTP server for local development
-  - `download-complete-site.py` - Python script for downloading and mirroring the website
+  - `images/` - Shared image assets
+  - `fonts/` - Web fonts directory (currently empty, fonts loaded from Google Fonts)
+
+### Content Organization
+The site is organized into logical sections:
+- **Practice Areas**:
+  - `bankruptcy/` - Chapter 7 and Chapter 13 bankruptcy information
+  - `estate-planning-asset-protection/` - Wills, POA, and advanced directives
+- **Resources**:
+  - `blog/` - Legal articles and FAQs
+  - `videos/` - Video content page
+  - `testimonials/` - Client testimonials
+- **Legal Forms & Intake**:
+  - `new-client-intake-form/` - General client intake
+  - `estate-planning-intake/` - Estate planning specific intake
+- **Disclosures & Legal**:
+  - `chapter-7-disclosures/` and `chapter-13-disclosures/` - Required legal disclosures
+  - `disclaimer/` - Site disclaimer
 
 ### Key Technical Details
 
-1. **Static Site**: This is a fully static website with no build process or compilation step required. All assets are pre-compiled and ready to serve.
+1. **Static Site**: This is a fully static website with no build process required. All assets are pre-compiled and minified.
 
-2. **Server Implementation**: The `server.js` file implements a basic HTTP server using Node.js core modules (no dependencies) that serves static files with appropriate MIME types.
+2. **External Dependencies**: The site uses:
+   - Google Fonts (Alegreya and Source Sans Pro)
+   - Cloudinary CDN for some images
+   - Google Maps API for location display
+   - Schema.org structured data for SEO
 
-3. **Website Downloader**: The `download-complete-site.py` script:
-   - Reads URLs from `arizonabk-sitemap.md`
-   - Downloads pages with all their assets
-   - Updates asset references to use local paths
-   - Creates a complete offline mirror
-
-4. **Page Structure**: The site follows a typical law firm website structure with:
-   - Practice area pages (bankruptcy, estate planning)
-   - Blog articles
-   - Contact and intake forms
-   - Attorney profile pages
-   - Legal disclosures and disclaimers
+3. **Asset Loading**: The site uses performance optimizations including:
+   - Preconnect hints for external domains
+   - Font preloading with print media trick for non-blocking load
+   - Minified and bundled CSS/JS assets
 
 ### Important Considerations
 
 - **No Build Process**: There are no npm scripts, webpack configs, or build tools. The site is ready to serve as-is.
 - **Form Submissions**: Forms exist but won't function without a backend server.
-- **External Dependencies**: The site preserves references to Google Fonts and analytics but these are optional for local development.
-- **Asset References**: All internal asset references use relative paths for portability.
+- **External Dependencies**: The site preserves references to Google Fonts and Cloudinary CDN but will work offline for basic viewing.
+- **URL Structure**: Each page uses directory-based URLs with `index.html` files for clean URLs when served by a web server.
