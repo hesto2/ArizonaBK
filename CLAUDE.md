@@ -54,9 +54,10 @@ The site is organized into logical sections:
 
 2. **External Dependencies**: The site uses:
    - Google Fonts (Alegreya and Source Sans Pro)
-   - Cloudinary CDN for some images
+   - Cloudinary CDN for background images only
    - Google Maps API for location display
    - Schema.org structured data for SEO
+   - **Note**: All Cloudfront CDN assets have been migrated to local `/assets/`
 
 3. **Asset Loading**: The site uses performance optimizations including:
    - Preconnect hints for external domains
@@ -67,7 +68,7 @@ The site is organized into logical sections:
 
 - **No Build Process**: There are no npm scripts, webpack configs, or build tools. The site is ready to serve as-is.
 - **Form Submissions**: Forms exist but won't function without a backend server.
-- **External Dependencies**: The site preserves references to Google Fonts and Cloudinary CDN but will work offline for basic viewing.
+- **External Dependencies**: Only Google Fonts and Cloudinary background images remain external. All critical CSS/JS/logos are served locally.
 - **URL Structure**: Each page uses directory-based URLs with `index.html` files for clean URLs when served by a web server.
 
 ## GitHub Pages Deployment
@@ -79,16 +80,19 @@ This site is deployed on GitHub Pages at: https://hesto2.github.io/ArizonaBK/
 **IMPORTANT**: GitHub Pages serves this site from a subdirectory (`/ArizonaBK/`), not the root domain. This affects how asset paths must be configured:
 
 #### Correct Asset Paths for GitHub Pages:
-- ✅ **Use**: `/ArizonaBK/assets/images/filename`
-- ❌ **Don't use**: `/assets/images/filename` (will 404 on GitHub Pages)
-- ❌ **Don't use**: `assets/images/filename` (breaks in subdirectories)
+- ✅ **Use**: `/ArizonaBK/assets/` prefix for ALL local assets
+- ❌ **Don't use**: `/assets/` (will 404 on GitHub Pages)
+- ❌ **Don't use**: `assets/` (breaks in subdirectories)
+- ❌ **Don't use**: Any Cloudfront CDN URLs
 
-#### Local Assets Referenced:
-All local image assets are stored in `/assets/images/` and include:
-- `favicon-ffbed04d` - Site favicon
-- `header-f56f7294` - Header logo image
-- `mobile_logo-c4202588` - Mobile version of logo
-- Additional hero/background images
+#### Local Assets (All migrated from Cloudfront CDN):
+- **CSS**: `/ArizonaBK/assets/css/main.website-atchley-239093.9f768564c2c224ab592f.bundle.min.css`
+- **JS**: `/ArizonaBK/assets/js/main.website-atchley-239093.9f768564c2c224ab592f.bundle.js`
+- **Images**: `/ArizonaBK/assets/images/`
+  - `favicon-ffbed04d` - Site favicon
+  - `header-f56f7294` - Header logo
+  - `mobile_logo-c4202588` - Mobile logo
+  - Hero/background images
 
 #### Path Resolution Examples:
 - **Root page** (`/index.html`):
