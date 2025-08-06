@@ -1,0 +1,94 @@
+[2025-07-13T23:19:32.940Z] Starting Arizona BK website download...
+[2025-07-13T23:19:32.942Z] Downloading to: arizonabk-offline-node
+[2025-07-13T23:19:32.942Z] Downloading page: https://www.arizonabk.com/
+[2025-07-13T23:19:33.231Z] Failed to download resource: https:///$%7Bbg%7D - getaddrinfo ENOTFOUND ${bg}
+[2025-07-13T23:19:33.236Z] Saved page: arizonabk-offline-node/www.arizonabk.com/index.html
+[2025-07-13T23:19:34.238Z] Downloading page: https://www.arizonabk.com/mark-atchley/
+[2025-07-13T23:19:34.568Z] Failed to download resource: https://www.arizonabk.com/$%7Bbg%7D - Invalid URL
+[2025-07-13T23:19:34.569Z] Saved page: arizonabk-offline-node/www.arizonabk.com/mark-atchley/index.html
+[2025-07-13T23:19:35.571Z] Downloading page: https://www.arizonabk.com/testimonials/
+[2025-07-13T23:19:35.753Z] Saved page: arizonabk-offline-node/www.arizonabk.com/testimonials/index.html
+[2025-07-13T23:19:36.754Z] Downloading page: https://www.arizonabk.com/videos/
+[2025-07-13T23:19:36.924Z] Saved page: arizonabk-offline-node/www.arizonabk.com/videos/index.html
+[2025-07-13T23:19:37.925Z] Downloading page: https://www.arizonabk.com/blog/
+[2025-07-13T23:19:38.110Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/index.html
+[2025-07-13T23:19:39.113Z] Downloading page: https://www.arizonabk.com/contact/
+[2025-07-13T23:19:39.256Z] Saved page: arizonabk-offline-node/www.arizonabk.com/contact/index.html
+[2025-07-13T23:19:40.257Z] Downloading page: https://www.arizonabk.com/practice-areas/
+[2025-07-13T23:19:40.431Z] Saved page: arizonabk-offline-node/www.arizonabk.com/practice-areas/index.html
+[2025-07-13T23:19:41.432Z] Downloading page: https://www.arizonabk.com/estate-planning-asset-protection/
+[2025-07-13T23:19:41.609Z] Saved page: arizonabk-offline-node/www.arizonabk.com/estate-planning-asset-protection/index.html
+[2025-07-13T23:19:42.610Z] Downloading page: https://www.arizonabk.com/estate-planning-asset-protection/wills/
+[2025-07-13T23:19:42.904Z] Failed to download resource: https://www.arizonabk.com/estate-planning-asset-protection/$%7Bbg%7D - Invalid URL
+[2025-07-13T23:19:42.905Z] Saved page: arizonabk-offline-node/www.arizonabk.com/estate-planning-asset-protection/wills/index.html
+[2025-07-13T23:19:43.908Z] Downloading page: https://www.arizonabk.com/estate-planning-asset-protection/advanced-directives/
+[2025-07-13T23:19:44.093Z] Saved page: arizonabk-offline-node/www.arizonabk.com/estate-planning-asset-protection/advanced-directives/index.html
+[2025-07-13T23:19:45.093Z] Downloading page: https://www.arizonabk.com/estate-planning-asset-protection/powers-of-attorney/
+[2025-07-13T23:19:45.266Z] Saved page: arizonabk-offline-node/www.arizonabk.com/estate-planning-asset-protection/powers-of-attorney/index.html
+[2025-07-13T23:19:46.267Z] Downloading page: https://www.arizonabk.com/bankruptcy/
+[2025-07-13T23:19:46.453Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/index.html
+[2025-07-13T23:19:47.454Z] Downloading page: https://www.arizonabk.com/bankruptcy/chapter-7-bankruptcy/
+[2025-07-13T23:19:47.773Z] Failed to download resource: https://www.arizonabk.com/bankruptcy/$%7Bbg%7D - Invalid URL
+[2025-07-13T23:19:47.774Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/chapter-7-bankruptcy/index.html
+[2025-07-13T23:19:48.775Z] Downloading page: https://www.arizonabk.com/bankruptcy/chapter-13-bankruptcy/
+[2025-07-13T23:19:48.946Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/chapter-13-bankruptcy/index.html
+[2025-07-13T23:19:49.948Z] Downloading page: https://www.arizonabk.com/bankruptcy/what-is-the-means-test/
+[2025-07-13T23:19:50.129Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/what-is-the-means-test/index.html
+[2025-07-13T23:19:51.130Z] Downloading page: https://www.arizonabk.com/bankruptcy/what-to-bring-to-your-bankruptcy-consultation/
+[2025-07-13T23:19:51.306Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/what-to-bring-to-your-bankruptcy-consultation/index.html
+[2025-07-13T23:19:52.309Z] Downloading page: https://www.arizonabk.com/bankruptcy/chapter-7-bankruptcy-faqs/
+[2025-07-13T23:19:52.487Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/chapter-7-bankruptcy-faqs/index.html
+[2025-07-13T23:19:53.488Z] Downloading page: https://www.arizonabk.com/bankruptcy/chapter-13-bankruptcy-faqs/
+[2025-07-13T23:19:53.671Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/chapter-13-bankruptcy-faqs/index.html
+[2025-07-13T23:19:54.673Z] Downloading page: https://www.arizonabk.com/bankruptcy/wage-garnishment/
+[2025-07-13T23:19:54.857Z] Saved page: arizonabk-offline-node/www.arizonabk.com/bankruptcy/wage-garnishment/index.html
+[2025-07-13T23:19:55.859Z] Downloading page: https://www.arizonabk.com/blog/debt-collection-faqs/
+[2025-07-13T23:19:56.152Z] Failed to download resource: https://www.arizonabk.com/blog/$%7Bbg%7D - Invalid URL
+[2025-07-13T23:19:56.154Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/debt-collection-faqs/index.html
+[2025-07-13T23:19:57.155Z] Downloading page: https://www.arizonabk.com/blog/how-to-give-great-gifts-without-going-broke/
+[2025-07-13T23:19:57.334Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/how-to-give-great-gifts-without-going-broke/index.html
+[2025-07-13T23:19:58.335Z] Downloading page: https://www.arizonabk.com/blog/what-taxes-can-i-discharge-in-bankruptcy/
+[2025-07-13T23:19:58.511Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/what-taxes-can-i-discharge-in-bankruptcy/index.html
+[2025-07-13T23:19:59.512Z] Downloading page: https://www.arizonabk.com/blog/wall-street-journal-white-house-floats-bankruptcy-process-for-some-student-loan-debt/
+[2025-07-13T23:19:59.690Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/wall-street-journal-white-house-floats-bankruptcy-process-for-some-student-loan-debt/index.html
+[2025-07-13T23:20:00.691Z] Downloading page: https://www.arizonabk.com/blog/are-late-filed-tax-returns-dischargeable-in-bankruptcy/
+[2025-07-13T23:20:00.864Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/are-late-filed-tax-returns-dischargeable-in-bankruptcy/index.html
+[2025-07-13T23:20:01.865Z] Downloading page: https://www.arizonabk.com/blog/bankruptcy-myths-debunked/
+[2025-07-13T23:20:02.040Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/bankruptcy-myths-debunked/index.html
+[2025-07-13T23:20:03.041Z] Downloading page: https://www.arizonabk.com/blog/bankruptcy-terms-to-know/
+[2025-07-13T23:20:03.218Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/bankruptcy-terms-to-know/index.html
+[2025-07-13T23:20:04.219Z] Downloading page: https://www.arizonabk.com/blog/the-difference-between-chapter-7-and-chapter-13/
+[2025-07-13T23:20:04.387Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/the-difference-between-chapter-7-and-chapter-13/index.html
+[2025-07-13T23:20:05.388Z] Downloading page: https://www.arizonabk.com/blog/how-can-i-stop-a-wage-garnishment-immediately/
+[2025-07-13T23:20:05.561Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/how-can-i-stop-a-wage-garnishment-immediately/index.html
+[2025-07-13T23:20:06.562Z] Downloading page: https://www.arizonabk.com/blog/what-assets-can-i-keep-if-i-file-for-bankruptcy/
+[2025-07-13T23:20:06.745Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/what-assets-can-i-keep-if-i-file-for-bankruptcy/index.html
+[2025-07-13T23:20:07.747Z] Downloading page: https://www.arizonabk.com/blog/estate-planning-in-arizona-frequently-asked-questions/
+[2025-07-13T23:20:07.932Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/estate-planning-in-arizona-frequently-asked-questions/index.html
+[2025-07-13T23:20:08.933Z] Downloading page: https://www.arizonabk.com/blog/do-i-need-a-will/
+[2025-07-13T23:20:09.104Z] Saved page: arizonabk-offline-node/www.arizonabk.com/blog/do-i-need-a-will/index.html
+[2025-07-13T23:20:10.112Z] Downloading page: https://www.arizonabk.com/estate-planning-intake/
+[2025-07-13T23:20:10.266Z] Saved page: arizonabk-offline-node/www.arizonabk.com/estate-planning-intake/index.html
+[2025-07-13T23:20:11.267Z] Downloading page: https://www.arizonabk.com/chapter-7-disclosures/
+[2025-07-13T23:20:11.448Z] Saved page: arizonabk-offline-node/www.arizonabk.com/chapter-7-disclosures/index.html
+[2025-07-13T23:20:12.451Z] Downloading page: https://www.arizonabk.com/chapter-13-disclosures/
+[2025-07-13T23:20:12.632Z] Saved page: arizonabk-offline-node/www.arizonabk.com/chapter-13-disclosures/index.html
+[2025-07-13T23:20:13.632Z] Downloading page: https://www.arizonabk.com/new-client-intake-form/
+[2025-07-13T23:20:13.817Z] Saved page: arizonabk-offline-node/www.arizonabk.com/new-client-intake-form/index.html
+[2025-07-13T23:20:14.818Z] Downloading page: https://www.arizonabk.com/do-you-have-metlife-legal-plan/
+[2025-07-13T23:20:15.008Z] Saved page: arizonabk-offline-node/www.arizonabk.com/do-you-have-metlife-legal-plan/index.html
+[2025-07-13T23:20:16.010Z] Downloading page: https://www.arizonabk.com/do-you-have-arag-legal-your-search-for-an-attorney-to-prepare-your-estate-plan-is-over/
+[2025-07-13T23:20:16.193Z] Saved page: arizonabk-offline-node/www.arizonabk.com/do-you-have-arag-legal-your-search-for-an-attorney-to-prepare-your-estate-plan-is-over/index.html
+[2025-07-13T23:20:17.195Z] Downloading page: https://www.arizonabk.com/do-you-have-teamster-benefits-your-search-for-an-attorney-to-prepare-your-estate-plan-is-over/
+[2025-07-13T23:20:17.372Z] Saved page: arizonabk-offline-node/www.arizonabk.com/do-you-have-teamster-benefits-your-search-for-an-attorney-to-prepare-your-estate-plan-is-over/index.html
+[2025-07-13T23:20:18.376Z] Downloading page: https://www.arizonabk.com/sitemap/
+[2025-07-13T23:20:18.562Z] Saved page: arizonabk-offline-node/www.arizonabk.com/sitemap/index.html
+[2025-07-13T23:20:19.563Z] Downloading page: https://www.arizonabk.com/disclaimer/
+[2025-07-13T23:20:19.755Z] Saved page: arizonabk-offline-node/www.arizonabk.com/disclaimer/index.html
+[2025-07-13T23:20:19.756Z] ===================================
+[2025-07-13T23:20:19.756Z] Download Complete!
+[2025-07-13T23:20:19.756Z] ===================================
+[2025-07-13T23:20:19.756Z] Website downloaded to: arizonabk-offline-node
+[2025-07-13T23:20:19.756Z] Total pages downloaded: 69
+[2025-07-13T23:20:19.756Z] Failed downloads: 5
+[2025-07-13T23:20:19.756Z] View offline at: arizonabk-offline-node/index.html
