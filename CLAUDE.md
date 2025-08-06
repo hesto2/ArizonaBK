@@ -9,14 +9,13 @@ This is a local mirror of the Arizona Bankruptcy Law Firm website (www.arizonabk
 ## Development Commands
 
 ### Viewing the Site
-To view the website, open any of the HTML files in the `www.arizonabk.com/` directory in a web browser:
+To view the website, open any of the HTML files in a web browser:
 ```bash
-open www.arizonabk.com/index.html
+open index.html
 ```
 
 For better local development experience with proper MIME types, you can use Python's built-in server:
 ```bash
-cd www.arizonabk.com
 python3 -m http.server 8080
 ```
 Then visit http://localhost:8080
@@ -24,7 +23,7 @@ Then visit http://localhost:8080
 ## Architecture
 
 ### Project Structure
-- **Website Content**: `www.arizonabk.com/` - Contains the complete website structure
+- **Website Content**: Now in root directory (moved from `www.arizonabk.com/` for GitHub Pages)
   - Main pages in subdirectories with `index.html` files
   - Each section (bankruptcy, blog, estate-planning, etc.) is self-contained
 - **Assets Directory**: `assets/` - Contains global static resources
@@ -70,3 +69,42 @@ The site is organized into logical sections:
 - **Form Submissions**: Forms exist but won't function without a backend server.
 - **External Dependencies**: The site preserves references to Google Fonts and Cloudinary CDN but will work offline for basic viewing.
 - **URL Structure**: Each page uses directory-based URLs with `index.html` files for clean URLs when served by a web server.
+
+## GitHub Pages Deployment
+
+This site is deployed on GitHub Pages at: https://hesto2.github.io/ArizonaBK/
+
+### Critical Asset Path Configuration
+
+**IMPORTANT**: GitHub Pages serves this site from a subdirectory (`/ArizonaBK/`), not the root domain. This affects how asset paths must be configured:
+
+#### Correct Asset Paths for GitHub Pages:
+- ✅ **Use**: `/ArizonaBK/assets/images/filename`
+- ❌ **Don't use**: `/assets/images/filename` (will 404 on GitHub Pages)
+- ❌ **Don't use**: `assets/images/filename` (breaks in subdirectories)
+
+#### Local Assets Referenced:
+All local image assets are stored in `/assets/images/` and include:
+- `favicon-ffbed04d` - Site favicon
+- `header-f56f7294` - Header logo image
+- `mobile_logo-c4202588` - Mobile version of logo
+- Additional hero/background images
+
+#### Path Resolution Examples:
+- **Root page** (`/index.html`):
+  - `/ArizonaBK/assets/images/header.png` → Resolves correctly
+- **Subdirectory page** (`/blog/article/index.html`):
+  - `/ArizonaBK/assets/images/header.png` → Resolves correctly
+  - `assets/images/header.png` → Would fail (resolves to `/blog/article/assets/...`)
+
+#### When Making Changes:
+1. Always use absolute paths with the GitHub Pages subdirectory prefix
+2. Test asset loading on both root and nested pages
+3. Verify paths work both locally and on the deployed GitHub Pages site
+4. Remember that GitHub Pages URL structure is: `https://[username].github.io/[repository-name]/`
+
+### Repository Information
+- **GitHub Repository**: https://github.com/hesto2/ArizonaBK
+- **GitHub Pages URL**: https://hesto2.github.io/ArizonaBK/
+- **Deployment Branch**: main
+- **Deployment Path**: / (root of repository)
